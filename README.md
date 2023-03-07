@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/f8d1b47e18b98222917e/maintainability)](https://codeclimate.com/github/exlawyer/frontend-project-46/maintainability)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/f8d1b47e18b98222917e/test_coverage)](https://codeclimate.com/github/exlawyer/frontend-project-46/test_coverage)
+
+![example workflow](https://github.com/exlawyer/frontend-project-46/blob/main/.github/workflows/main.yml/badge.svg)
