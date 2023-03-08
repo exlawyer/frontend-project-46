@@ -14,7 +14,7 @@ publish:
 	npm publish --dry-run
 
 test:
-	npm test
+	NODE_OPTIONS=--experimental-vm-modules npx jest
 
 test-coverage:
-	npm test --coverage
+	NODE_OPTIONS=--experimental-vm-modules npx jest --coverage

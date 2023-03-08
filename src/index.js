@@ -10,11 +10,11 @@ const genDiff = (obj1, obj2) => {
     .map((entry) => {
       const [key, value] = entry;
       const node = {};
-      if (!obj1.hasOwnProperty(key) && obj2.hasOwnProperty(key)) {
+      if (!_.hasIn(obj1, key) && _.hasIn(obj2, key)) {
         node.key = [key];
         node.value = [value];
         node.status = 'added';
-      } else if (obj1.hasOwnProperty(key) && !obj2.hasOwnProperty(key)) {
+      } else if (_.hasIn(obj1, key) && !_.hasIn(obj2, key)) {
         node.key = [key];
         node.value = [value];
         node.status = 'deleted';
@@ -27,7 +27,7 @@ const genDiff = (obj1, obj2) => {
         node.value = [value];
         node.status = 'unchanged';
       }
-      nodes.push(node);
+      return nodes.push(node);
     });
   const sortedNodes = _.sortBy(nodes, 'key');
   let result = '';
@@ -55,6 +55,7 @@ const genDiff = (obj1, obj2) => {
         break;
       default: throw new Error(`Unknown status: '${node.key}'!`);
     }
+    return result;
   });
   return `{${result}\n}`;
 };
