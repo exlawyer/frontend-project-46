@@ -5,4 +5,4 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/f8d1b47e18b98222917e/test_coverage)](https://codeclimate.com/github/exlawyer/frontend-project-46/test_coverage)
 
-[![Github Actions](https://github.com/exlawyer/frontend-project-46/workflows/main/badge.svg)](https://github.com/exlawyer/frontend-project-46/actions)
+[![Actions status](https://github.com/exlawyer/frontend-project-46/workflows/main.yml/badge.svg)](https://github.com/exlawyer/frontend-project-46/actions)
