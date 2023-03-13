@@ -3,7 +3,6 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
 // import { dirname } from 'path';
-// import { cwd } from 'node:process';
 
 import gendiff from '../src/index.js';
 
