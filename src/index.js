@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import _ from 'lodash';
 import { cwd } from 'node:process';
 import path from 'node:path';
-import parsedData from './parsers.js';
+import parsedData from './parsers';
 
 const genDiff = (obj1, obj2) => {
   const allEntries = [...Object.entries(obj1), ...Object.entries(obj2)];
